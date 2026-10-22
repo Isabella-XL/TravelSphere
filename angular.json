@@ -18,12 +18,18 @@
           "options": {
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
+         
+"assets": [
+  {
+    "glob": "**/*",
+    "input": "public"
+  },
+  {
+    "glob": "**/*",
+    "input": "node_modules/cesium/Build/Cesium",
+    "output": "assets/cesium"
+  }
+],
             "styles": [
               "src/styles.css"
             ]
